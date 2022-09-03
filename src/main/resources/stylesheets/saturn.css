@@ -1,27 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
-#box{
-    background: #bbb;
-    float: right;
 
-    width: 25%;
-    padding: 50px;
-    height: 100vh;
-    border-radius: 30px;
-    z-index: 20;
-}
-
-* {
-    box-sizing:border-box;
-}
-
-body {
-    background:#444;
-}
-
-.post-it {
-    width:250px;
-    height:240px;
+.saturn-post-it {
+    width:270px;
+    height:360px;
     position: relative;
 
     background:#ffa;
@@ -37,7 +19,7 @@ body {
             0 5px 6px 5px rgba(0,0,0,0.2);
     font-family: 'Permanent Marker', cursive;
     line-height:1.7em;
-    font-size:19px;
+    font-size:15px;
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 
     color:#130d6b;
@@ -45,7 +27,7 @@ body {
 
 
 
-.post-it:before {
+.saturn-post-it:before {
     content:"";
     display:block;
     position:absolute;
@@ -61,7 +43,7 @@ body {
     transform:skewX(25deg);
 }
 
-.post-it:after {
+.saturn-post-it:after {
     content:"";
     display:block;
     position:absolute;
@@ -82,17 +64,17 @@ h1 {
     position:relative;
 }
 
-.earth{
+#saturn{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    top: 10%;
+    bottom: 60%;
+    left: 90%;
     right: 0;
     margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
     z-index: 1;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Blue_Marble_2002.png/600px-Blue_Marble_2002.png") ;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ea/Solarsystemscope_texture_2k_saturn.jpg") ;
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -10px 50px 2px rgba(0, 0, 0, 0.49) inset, 0 0 20px 2px rgba(0, 0, 0, 0.56);
@@ -100,6 +82,7 @@ h1 {
 }
 
 @keyframes spin {
-    100% {background-position: 100% }
-
+    100% {
+        background-position: 100%
+    }
 }

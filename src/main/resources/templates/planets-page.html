@@ -4,13 +4,269 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/bd1cbe0f7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" th:href="@{/stylesheets/index.css}" href="../stylesheets/index.css">
-    <link rel="stylesheet" th:href="@{/stylesheets/planets.css}" href="../stylesheets/planets.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/mercury.css}" href="../stylesheets/mercury.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/venus.css}" href="../stylesheets/venus.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/earth.css}" href="../stylesheets/earth.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/mars.css}" href="../stylesheets/mars.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/jupiter.css}" href="../stylesheets/jupiter.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/saturn.css}" href="../stylesheets/saturn.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/uranus.css}" href="../stylesheets/uranus.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/neptune.css}" href="../stylesheets/neptune.css">
+    <link rel="stylesheet" th:href="@{/stylesheets/pluto.css}" href="../stylesheets/pluto.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!-- Jquery animation -->
+    <script>
+        $(document).ready(function () {
+
+            //Mercury big
+            $(".mercury-display").click(function (){
+                $("#mercury").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+                })
+            })
+            //Mercury small
+            $(".mercury-display").dblclick(function (){
+                $("#mercury").animate({
+                    left: '60%',
+                    top: '10%',
+                    bottom: '85%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //venus big
+            $(".venus-display").click(function (){
+                $("#venus").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //venus small
+            $(".venus-display").dblclick(function (){
+                $("#venus").animate({
+                    left: '75%',
+                    top: '10%',
+                    bottom: '85%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //Earth big
+            $(".earth-display").click(function (){
+                $("#earth").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%',
+
+                });
+                $(".earth-post-it").show()
+
+            });
+
+            //Earth small
+            $(".earth-display").dblclick(function (){
+                $("#earth").animate({
+                    left: '90%',
+                    top: '10%',
+                    bottom: '85%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+                $(".earth-post-it").hide()
+
+
+            })
+
+            //Mars small
+            $(".mars-display").click(function (){
+                $("#mars").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+                })
+            })
+
+            //Mars big
+            $(".mars-display").dblclick(function (){
+                $("#mars").animate({
+                    left: '60%',
+                    top: '10%',
+                    bottom: '60%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //jupiter big
+            $(".jupiter-display").click(function (){
+                $("#jupiter").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //jupiter small
+            $(".jupiter-display").dblclick(function (){
+                $("#jupiter").animate({
+                    left: '75%',
+                    top: '10%',
+                    bottom: '60%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //saturn big
+            $(".saturn-display").click(function (){
+                $("#saturn").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //saturn small
+            $(".saturn-display").dblclick(function (){
+                $("#saturn").animate({
+                    left: '90%',
+                    top: '10%',
+                    bottom: '60%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //neptune big
+            $(".neptune-display").click(function (){
+                $("#neptune").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //neptune small
+            $(".neptune-display").dblclick(function (){
+                $("#neptune").animate({
+                    left: '60%',
+                    top: '10%',
+                    bottom: '30%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //uranus big
+            $(".uranus-display").click(function (){
+                $("#uranus").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //uranus small
+            $(".uranus-display").dblclick(function (){
+                $("#uranus").animate({
+                    left: '75%',
+                    top: '10%',
+                    bottom: '30%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+            //pluto big
+            $(".pluto-display").click(function (){
+                $("#pluto").animate({
+                    left: '0%',
+                    height: '300px',
+                    width: '300px',
+                    bottom: '0%',
+                    top: '0%'
+
+                })
+
+            })
+
+            //pluto small
+            $(".pluto-display").dblclick(function (){
+                $("#pluto").animate({
+                    left: '90%',
+                    top: '10%',
+                    bottom: '30%',
+                    width: '50px',
+                    height: '50px'
+
+                })
+
+            })
+
+
+        });
+
+    </script>
+    <!-- Jquery end-->
+
+
     <title>Planets</title>
 </head>
 
 
 <body>
 
+<!-- navigation -->
 <nav class="nav-list">
 
     <a href="#first"><i class="fa-solid fa-earth-americas"></i></a>
@@ -33,15 +289,33 @@
         <h1><a href="flight-booking-page.html"></i> Flight Booking</a></h1>
     </section>
 
+<!-- Navigation end -->
 
-    <div class="earth"></div>
-    <div id="box"></div>
+
+
+    <!-- planets -->
+    <div id="mercury" class="mercury-display"></div>
+    <div id="venus" class="venus-display"></div>
+    <div id="earth" class="earth-display"></div>
+    <div id="mars" class="mars-display"></div>
+    <div id="jupiter" class="jupiter-display"></div>
+    <div id="saturn" class="saturn-display"></div>
+    <div id="uranus" class="uranus-display"></div>
+    <div id="neptune" class="neptune-display"></div>
+    <div id="pluto" class="pluto-display"></div>
+    <!-- planets end -->
+
+    <div id="planet-box">
+
+    </div>
 
     <div class='post-it'>
-        <h1>Earth</h1>
+
+        <p class="saturn-post-it">-As of 2020, Inhabitants were as big as 7.753 billion.</p>
 
 
     </div>
+
 
 </div>
 
